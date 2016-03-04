@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner 1</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+</head>
+<body>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#learnMoreY").animate({width:"100px"}, 1000);
+				$("#titleG").animate({width:"100px"}, 1000);
+			}, 1000);
+
+			$("#containerBanner").click(function() {
+			    url = "http://www.wingatehotels.com/?tel=8885953512&wid=PS:WG:20160201:GGL:TM:WINNAT:Trademark%7CMSP&adpos=1t1&creative=85340214429&device=c&matchtype=e&network=g&gclid=CJiBo7-KpcsCFUEfhgodTiAN-A"
+			    	window.open(url, '_blank');
+			      	return false;
+			});
+		})
+	</script>
+	<div id="containerBanner" style="width: 120px;height: 600px; cursor: pointer;">
+		<section id="title" style="height: 233px;background-image: url(backgroundTitle.jpg);position: relative; padding: 0 5px;">
+			<div class="brand">
+				<img src="brand.png" style="width: 90px;height: 40px;display: block;position: relative;margin: 0 auto;padding-top: 15px;">
+			</div>
+			<div id="texto" style="position: relative;">
+				<div id="titleG" style="background-image: url('titleG.png');background-repeat: no-repeat;background-size: 100px auto;display: block;    float: left;height: 149px;left: 5px;position: absolute;right: 0;top: 20px;width: 0px;z-index: 1;">					
+				</div>
+				<img width="100px" src="title.png" style="display: block;margin: 0 auto;padding-top: 20px;position: relative;">
+			</div>
+			
+		</section>
+		<section id="content" style="height:367px;background-image: url(backgroundContent.jpg); position: relative;">
+			<div id="learnMore" class="learnMore" style="bottom: 10px;display: block;left: 0;margin: 0 auto;position: absolute;right: 0;">
+				<div id="learnMoreY" style="background-image: url('learnMoreY.png');background-repeat: no-repeat;background-size: 100px auto;bottom: 0;
+    display: block;float: left;height: 28px;left: 10px;position: absolute;right: 0;width: 0;z-index: 1;">					
+				</div>
+				<img width="100px" src="learnMore.png" style="display: block;margin: 0 auto;padding-top: 20px;position: relative;">
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>
